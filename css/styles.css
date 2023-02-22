@@ -1,3 +1,90 @@
+/*=======*/
+/* DEBUG */
+/*=======*/
+/* *,
+*::before,
+*::after {
+  outline: 1px double red;
+  background-color: rgba(200, 0, 0, 0.15);
+}
+
+.column {
+  position: relative;
+}
+
+.column--1::before,
+.column--2::before,
+.column--3::before,
+.column--4::before,
+.column--5::before,
+.column--6::before {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 6px;
+  font-size: 10px;
+  font-weight: 900;
+  background-color: #222;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 1px 6px;
+}
+
+.column--1::before {
+  content: "Col 1";
+}
+
+.column--2::before {
+  content: "Col 2";
+}
+
+.column--3::before {
+  content: "Col 3";
+}
+
+.column--4::before {
+  content: "Col 4";
+}
+
+.column--5::before {
+  content: "Col 5";
+}
+
+.column--6::before {
+  content: "Col 6";
+}
+
+.column--1 {
+  background-color: rgba(0, 200, 0, 0.15);
+  outline: 1px dashed green;
+}
+
+.column--2 {
+  background-color: rgba(200, 0, 0, 0.15);
+  outline: 1px dashed red;
+}
+
+.column--3 {
+  background-color: rgba(0, 0, 200, 0.15);
+  outline: 1px dashed blue;
+}
+
+.column--4 {
+  background-color: rgba(146, 16, 92, 0.15);
+  outline: 1px dashed purple;
+}
+
+.column--5 {
+  background-color: rgba(29, 208, 231, 0.15);
+  outline: 1px dashed teal;
+}
+
+.column--6 {
+  background-color: rgba(197, 164, 18, 0.15);
+  outline: 1px dashed goldenrod;
+} */
+
 /*=========*/
 /* GENERAL */
 /*=========*/
@@ -318,30 +405,30 @@ section.main-hero-section {
   margin: 16px;
 }
 
-.background-images {
+.main-hero__background-images {
   overflow: hidden;
 }
 
-.background-images img {
+.main-hero__background-images img {
   position: absolute;
   bottom: -150px;
   z-index: 1000;
 }
 
-img.shoe-gang,
+.main-hero__background-images img.shoe-gang,
 img.lounge-gang {
   width: 650px;
 }
 
-img.shoe-gang {
+.main-hero__background-images img.shoe-gang {
   left: -350px;
 }
 
-img.backdrop {
+.main-hero__background-images img.backdrop {
   width: 1140px;
 }
 
-img.lounge-gang {
+.main-hero__background-images img.lounge-gang {
   width: 550px;
   right: -270px;
 }
